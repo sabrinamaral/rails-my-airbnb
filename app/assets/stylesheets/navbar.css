@@ -1,0 +1,12 @@
+#nav {
+  background-color: #edede9;
+  padding: 12px 8px;
+}
+
+.btn-add-flat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  width: 7rem;
+}
