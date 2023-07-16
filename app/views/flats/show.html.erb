@@ -1,0 +1,14 @@
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h1 class='mb-4'>Flat <%= @flat.name %></h1>
+      <img src="<%=@flat.image_url%>" class="card-img-top mb-4" alt="random">
+      <p class='fs-4'><i class="fa-regular fa-map fs-3 me-2"></i> <%= @flat.address %></p>
+      <p class='fs-5'><%= @flat.description %></p>
+      <div class='d-flex justify-content-between fs-4'>
+        <span><i class="fa-solid fa-dollar-sign"></i> <%= @flat.price_per_night %></span>
+        <span><i class="fa-solid fa-user-group"></i> <%= @flat.number_of_guests %></span>
+      </div>
+    </div>
+  </div>
+</div>
