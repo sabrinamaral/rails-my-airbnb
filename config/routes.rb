@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'flats#index'
-  resources :flats do
+  resources :flats, except: :index do
     collection do
       get :search
     end

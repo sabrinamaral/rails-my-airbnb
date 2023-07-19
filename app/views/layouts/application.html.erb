@@ -17,10 +17,9 @@
     <nav id='nav' class="navbar bg-body-tertiary">
       <div class="container-fluid">
       <%= link_to 'My Simple Airbnb', root_path, class:"navbar-brand" %>
-</a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" name='search' placeholder="Search" aria-label="Search">
-          <%= link_to 'Search', search_flats_path, class:'btn btn-outline-success btn-sm btn-add-flat' %>
+        <form action="/" method="get" class="d-flex" >
+          <input class="form-control me-2" type='text' name='search' placeholder="Search" aria-label="Search" >
+          <input class='btn btn-outline-success btn-sm btn-add-flat' type='submit'>
           <%= link_to 'Add Flat', new_flat_path, class:'btn btn-outline-primary btn-sm btn-add-flat' %>
         </form>
       </div>

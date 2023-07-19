@@ -2,14 +2,11 @@ class FlatsController < ApplicationController
 
   def index
     @flats = Flat.all
+    return @flats = Flat.where('name LIKE ?', "%#{params[:search]}%") if params[:search]
   end
 
   def show
     @flat = Flat.find(params[:id])
-  end
-
-  def search
-    @flats = Flat.where("name LIKE '%Nature%'")
   end
 
   def new
